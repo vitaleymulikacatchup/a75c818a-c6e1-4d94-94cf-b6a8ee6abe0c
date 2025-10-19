@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
@@ -82,7 +82,7 @@ export default function Page() {
       <div id="socialProof" data-section="socialProof" className="scroll-mt-24">
         <div className="mx-auto px-4 md:px-6">
           <SocialProofOne
-            logos={assetMap.filter(a => a.id.startsWith("logo-")).map(a => ({ url: a.url, alt: a.alt ?? "" }))}
+            logos={assetMap.filter(a => a.id.startsWith("logo-")).map(a => a.url)}
             title="Trusted by Industry Leaders"
             description="Join the ranks of top companies benefiting from our solutions."
           />
